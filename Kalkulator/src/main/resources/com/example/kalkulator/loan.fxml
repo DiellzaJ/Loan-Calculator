@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kalkulator.LoanController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Pane layoutX="18.0" layoutY="80.0" prefHeight="297.0" prefWidth="364.0">
+               <children>
+                  <Label layoutX="25.0" layoutY="30.0" text="Enter Amount" />
+                  <Label layoutX="25.0" layoutY="60.0" text="Interest Rate" />
+                  <Label layoutX="25.0" layoutY="90.0" text="Duration" />
+                  <TextField id="txtDuration" fx:id="txtDuration" layoutX="115.0" layoutY="89.0" style="-fx-background-color: transparent; -fx-border-color: #132A13; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="txtInterestRate" fx:id="txtInterestRate" layoutX="115.0" layoutY="56.0" style="-fx-background-color: transparent; -fx-border-color: #132A13; -fx-border-width: 0px 0px 2px 0px;" />
+                  <TextField id="txtAmount" fx:id="txtAmount" layoutX="115.0" layoutY="25.0" style="-fx-background-color: transparent; -fx-border-color: #132A13; -fx-border-width: 0px 0px 2px 0px;" />
+                  <Button id="btnCalculate" fx:id="btnCalculate" layoutX="67.0" layoutY="137.0" mnemonicParsing="false" onAction="#handleCalculate" style="-fx-background-color: #132A13;" text="Calculate" textFill="#f8f5f5" />
+                  <Button id="btnExit" fx:id="btnExit" layoutX="188.0" layoutY="138.0" mnemonicParsing="false" onAction="#handleExit" style="-fx-background-color: #132A13;" text="Exit" textFill="#fcfcfc" />
+                  <Label layoutX="25.0" layoutY="184.0" text="Monthly Payment" />
+                  <Label layoutX="25.0" layoutY="214.0" text="Interest Paid" />
+                  <Label layoutX="25.0" layoutY="244.0" text="Total Paid" />
+                  <Label id="lblPayment" fx:id="lblPayment" layoutX="142.0" layoutY="184.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label id="lblInterest" fx:id="lblInterest" layoutX="142.0" layoutY="214.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+                  <Label id="lblTotal" fx:id="lblTotal" layoutX="142.0" layoutY="244.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <Label layoutX="283.0" layoutY="26.0" text="Loan Calculator">
+               <font>
+                  <Font name="System Bold" size="36.0" />
+               </font>
+            </Label>
+            <PieChart id="pieChart" fx:id="pieChart" layoutX="349.0" layoutY="73.0" prefHeight="292.0" prefWidth="347.0" title="Loan Chart" />
+            <TableView id="table" fx:id="table" layoutX="19.0" layoutY="368.0" prefHeight="212.0" prefWidth="737.0" style="-fx-border-color: #132A13; -fx-background-color: transparent; -fx-background-insets: #132A13;" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
