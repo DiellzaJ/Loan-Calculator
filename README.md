@@ -1,7 +1,7 @@
 
  Loan Calculator (JavaFX) — Amortization Table
 
-A simple JavaFX application that calculates a loan’s **monthly payment and generates a full amortization table (month-by-month breakdown of: payment, interest paid, principal/capital paid, and remaining balance).  
+A simple JavaFX application that calculates a loan’s monthly payment and generates a full amortization table (month-by-month breakdown of: payment, interest paid, principal/capital paid, and remaining balance).  
 It also shows a Pie Chart that compares how much you pay in **interest vs capital**.
 
 ---
