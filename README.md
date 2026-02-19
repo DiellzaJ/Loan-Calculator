@@ -12,10 +12,12 @@ Inputs:
   - Loan amount (principal)
   - Annual interest rate (%)
   - Duration (years)
+
 Outputs:
   - Monthly payment
   - Total interest paid
   - Total amount paid (principal + interest)
+    
 Amortization table:
   - Month number
   - Starting balance
@@ -23,8 +25,10 @@ Amortization table:
   - Interest paid
   - Capital (principal) paid
   - Remaining balance
+
 Pie chart:
   - Interest vs Capital percentage
+
 Input validation (basic error alert if parsing fails)
 
 ---
